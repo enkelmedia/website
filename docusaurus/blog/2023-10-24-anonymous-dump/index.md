@@ -69,7 +69,7 @@ For example, I have a table called "extension_owners", and I would like to anony
 postgres=# select extension_id,user_name from extension_owners limit 1;
  extension_id |      user_name
 --------------+---------------------
-           26 | coredb-service-user
+           26 | tembo-service-user
 (1 row)
 ```
 

@@ -89,13 +89,13 @@ an instance in.
 kubectl label namespace default "tembo-pod-init.tembo.io/watch"="true"
 ```
 
-Apply the following sample `CoreDB` configuration.  This will use all defaults
+Apply the following sample `tembo` configuration.  This will use all defaults
 and will deploy a Tembo instance to your cluster.
 
 ```bash
 cat <<EOF | kubectl apply -f -
-apiVersion: coredb.io/v1alpha1
-kind: CoreDB
+apiVersion: tembo.io/v1alpha1
+kind: tembo
 metadata:
   name: test-db
 spec: {}
@@ -116,7 +116,7 @@ in you will need to define a `storageClass` when configuring your Tembo instance
 
 By default the tembo-operator will use your `default` storage class in your cluster.
 If you do not wish to use this storage class you will need to define it in the
-`CoreDB` configuration.
+`tembo` configuration.
 
 In this example we want to use the `storageClass` named `gp3enc` to provision the
 PVC's with.
@@ -129,8 +129,8 @@ gp3enc             ebs.csi.aws.com         Delete          WaitForFirstConsumer 
 ```
 
 ```yaml
-apiVersion: coredb.io/v1alpha1
-kind: CoreDB
+apiVersion: tembo.io/v1alpha1
+kind: tembo
 metadata:
   name: test-db
 spec:
@@ -157,7 +157,7 @@ Finally, delete the tembo-operator
 [`CustomResourceDefinitions`](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/)
 using the link to the version you installed:
 > **Warning**: This command will also remove installed tembo-operator CRDs. All
-> tembo-operator resources (e.g. `coredbs.coredb.io` resources) will
+> tembo-operator resources (e.g. `tembos.tembo.io` resources) will
 > be removed by Kubernetes' garbage collector.
 
 ```bash

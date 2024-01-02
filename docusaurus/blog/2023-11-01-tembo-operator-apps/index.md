@@ -32,8 +32,8 @@ However, let’s remember that  the main advantage of this method is not just re
 Let’s look at an example of a spec that would run the workload that we just described. This will look familiar if you’ve worked with the [Kubernetes Pod spec.](https://kubernetes.io/docs/concepts/workloads/pods/)
 
 ```yaml
-apiVersion: coredb.io/v1alpha1
-kind: CoreDB
+apiVersion: tembo.io/v1alpha1
+kind: tembo
 metadata:
   name: my-postgres-deployment
 spec:
@@ -66,8 +66,8 @@ Environment variables also have some advanced configuration. The Tembo operator 
 The Tembo operator is not limited to postgREST; it can run nearly any containerized application. For example, run your Rails application, or FastAPI web server. Specify the image, and other configurations as necessary and the Tembo operator will provision the resources.
 
 ```yaml
-apiVersion: coredb.io/v1alpha1
-kind: CoreDB
+apiVersion: tembo.io/v1alpha1
+kind: tembo
 metadata:
   name: my-postgres-deployment
 spec:

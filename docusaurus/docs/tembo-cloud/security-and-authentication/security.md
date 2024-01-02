@@ -73,7 +73,7 @@ spec:
     organizationalUnits:
       - engineering
   dnsNames:
-    - data-1.use1.coredb.io
+    - data-1.use1.tembo.io
     - data-1.use1.tembo.io
   isCA: true
   issuerRef:

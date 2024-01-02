@@ -64,8 +64,8 @@ This is where the Tembo Operator comes in. We built the Tembo Operator in a way 
 Let’s take a look at what a custom resource spec looks like for the Tembo Operator. Here’s an example for our Machine Learning Stack. We can see this sample spec makes use of our Machine Learning Stack and includes a handful of extensions. Keep in mind, these extensions are installed at runtime with Trunk and are not built into the container image.
 
 ```yaml
-apiVersion: coredb.io/v1alpha1
-kind: CoreDB
+apiVersion: tembo.io/v1alpha1
+kind: tembo
 metadata:
   name: sample-machine-learning
 spec:
@@ -161,7 +161,7 @@ To create our Postgres instance, we run the following command:
 
 ```bash
 ❯ kubectl apply -f yaml/sample-machine-learning.yaml
-coredb.coredb.io/sample-machine-learning created
+tembo.tembo.io/sample-machine-learning created
 ❯ kubectl get po
 NAME                                               READY   STATUS    RESTARTS   AGE
 sample-machine-learning-1                          1/1     Running   0          19s
