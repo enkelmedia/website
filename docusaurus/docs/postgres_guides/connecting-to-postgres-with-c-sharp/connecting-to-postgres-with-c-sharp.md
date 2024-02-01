@@ -90,9 +90,9 @@ In this example, we have demonstrated how you can read the data, but you can als
 **Insert**
 
 ```
-using NpgsqlCommand cmd = new NpgsqlCommand("INSERT INTO table_name (column1, column2) VALUES (value1, value2)", connection);
-        cmd.Parameters.AddWithValue("value1", "xyz");
-        cmd.Parameters.AddWithValue("value2", 123);
+using NpgsqlCommand cmd = new NpgsqlCommand("INSERT INTO table_name (column1, column2) VALUES (@value1, @value2)", connection);
+        cmd.Parameters.AddWithValue("@value1", "xyz");
+        cmd.Parameters.AddWithValue("@value2", 123);
 
         int rowsAffected = cmd.ExecuteNonQuery();
 ```
