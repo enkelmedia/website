@@ -13,12 +13,11 @@ description: |
   they work together.
 ---
 
-At Tembo, our customers have benefited significantly from the development of a
-vast array of PostgreSQL extensions. We firmly believe they're the key to the
-"just use Postgres" future: along with workload-specific infrastructure, new
+At Tembo, we firmly believe extensions are the key to the "just use Postgres" future.
+In fact, along with workload-specific infrastructure, new
 extensions and combinations of tools power the success of [Tembo Stacks].
 
-We want to see those benefits continue, and indeed to grow, which is why we've
+We want to see the usage of extensions continue, and indeed to grow, which is why we've
 made a significant investment to improve the Postgres extension distribution
 ecosystem, most recently by [adding PGXN creator David Wheeler] to our team. We
 want to work with the Postgres community to design, build, and benefit from the
@@ -52,8 +51,8 @@ Links:
 
 *   [Video (YouTube)](https://www.youtube.com/watch?v=sjZPA3HA_q8)
 *   [Keynote](pgxn-architecture.key "“PGXN Architecture” Keynote deck")
-*   [PDF (one page per slide)](pgxn-architecture.pdf)
-*   [PDF (one page per stage)](pgxn-architecture-stages.pdf)
+*   [PDF (one page per slide)](./pgxn-architecture.pdf)
+*   [PDF (one page per stage)](./pgxn-architecture-stages.pdf)
 
 [Tembo Stacks]: https://tembo.io/docs/category/tembo-stacks
 [adding PGXN creator David Wheeler]: /blog/2024-01-22-welcoming-pgxn-creator-david-wheeler/index.md
